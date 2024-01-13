@@ -161,31 +161,25 @@ form button:hover {
   transform: scale(1.1);
 }
 
-
-
-
-/* 
-.input-wrapper {
-  display: grid;
-  font-size: .85rem;
-  margin-bottom: 1rem;
+/* alert error */
+.alert-error.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
+.alert-error {
+  position: absolute;
+  background-color: var(--bg-error);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--tt-error);
+  padding: .8rem 0;
+  font-weight: bold;
 
-.input-wrapper label {
-  margin-bottom: .5rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform .5s;
 }
-
-.input-wrapper input {
-  width: 100%;
-  height: 3.2rem;
-  line-height: 1.25rem;
-  font-size: 1rem;
-  font-weight: 400;
-
-  padding: 1rem;
-
-  border-radius: 0.25rem;
-  border: 1px solid rgba(73, 80, 87, 0.30);
-  background: #DCE2E9;
-} */
-
